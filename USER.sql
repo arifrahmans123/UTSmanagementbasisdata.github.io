@@ -1,0 +1,7 @@
+CREATE ROLE backend_dev LOGIN PASSWORD 'ifunggul';
+GRANT USAGE ON SCHEMA salam TO backend_dev;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA salam TO backend_dev;
+
+CREATE ROLE bi_dev LOGIN PASSWORD 'ifunggul';
+GRANT USAGE ON SCHEMA salam TO bi_dev;
+GRANT SELECT ON ALL TABLES IN SCHEMA salam TO bi_dev;
